@@ -8,5 +8,5 @@ output "bucket_arn" {
 }
 output "website_url" {
   description = "Static Website Endpoint"
-  value = aws_s3_bucket.website_bucket.website_endpoint
+  value = aws_s3_bucket_website_configuration.website_config.website_endpoint
 }
